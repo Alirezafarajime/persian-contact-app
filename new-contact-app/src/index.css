@@ -37,7 +37,7 @@ body {
   background-clip: padding-box, border-box;
 
  
-  animation: rotate-gradient 4s linear infinite;
+  animation: rotate-gradient 6s linear infinite;
 }
 
 .header {
@@ -105,10 +105,13 @@ body {
 .btn-danger {
   background-color: var(--danger-color);
   color: rgb(232, 229, 229);
+   transition: background-color 0.8s ease, transform 0.6s ease, box-shadow 0.4s ease;
 }
 
 .btn-danger:hover {
-  background-color: #be021b;
+  background-color: #920417;
+   transform: translateY(-2px);
+     box-shadow: 0 4px 10px rgba(222, 54, 54, 0.4);
 }
 
 .btn-secondary {
