@@ -17,7 +17,13 @@ const initialContacts = [
 ];
 
 function App() {
-  const [contacts, setContacts] = useState(initialContacts);
+const [contacts, setContacts] = useState(() => {
+const savedContacts = localStorage.getItem('contacts');
+if (savedContacts) {
+try {return JSON.parse(savedContacts);
+} catch (e) {console.error("خطا در خواندن داده‌ها .", e);
+return initialContacts;}} else {
+ return initialContacts;}});
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredContacts, setFilteredContacts] = useState(contacts);
 
@@ -28,6 +34,10 @@ function App() {
 
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
   const [deleteAction, setDeleteAction] = useState(null);
+
+useEffect(() => {
+localStorage.setItem('contacts', JSON.stringify(contacts));
+}, [contacts]);
 
   useEffect(() => {
     const results = contacts.filter(contact =>
