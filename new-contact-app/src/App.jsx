@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import ContactList from './components/ContactList.jsx';
-import ConfirmationModal from './components/ConfirmationModal.jsx';
+import ConfirmModal from './components/ConfirmModal.jsx';
 import AddEditContactModal from './components/AddEditContactModal.jsx';
 import './index.css';
 
@@ -101,7 +101,7 @@ function App() {
         contactToEdit={contactToEdit}
       />
 
-      <ConfirmationModal
+      <ConfirmModal
         isOpen={isConfirmModalOpen}
         onClose={() => setIsConfirmModalOpen(false)}
         onConfirm={deleteAction}
