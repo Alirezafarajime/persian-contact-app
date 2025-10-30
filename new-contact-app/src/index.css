@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap');
 :root {
-  --primary-color: #4a90e2;
-  --danger-color: #d0021b;
-  --success-color: #7ed321;
-  --background-color: #f4f7f6;
+  --primary-color: #428ee4;
+  --danger-color: #be061b;
+  --success-color: #71c11b;
+  --background-color: #ccd3d0;
   --container-bg: #ffffff;
-  --text-color: #4a4a4a;
-  --border-color: #e0e0e0;
-  --hover-bg: #f8f9fa;
+  --text-color: #403f3f;
+  --border-color: #d3d3d3;
+  --hover-bg: #d5d9dc;
 }
 
 body {
   margin: 0;
-  font-family:'Oxygen',
-    sans-serif;
+  font-family:'Vazirmatn','Oxygen',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
@@ -53,8 +53,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   gap: 15px;
+}
+.search-bar {
+  flex-grow: 0.1;
 }
 
 .search-bar input {
@@ -64,12 +67,15 @@ body {
   border: 1px solid var(--border-color);
   font-size: 1rem;
   transition: border-color 0.4s, box-shadow 0.4s;
+  box-shadow: 0 6px 12px 0 rgba(74, 144, 226, 0.6);
+
 }
 
 .search-bar input:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  
 }
 
 .btn {
