@@ -90,7 +90,7 @@ body {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: rgb(241, 237, 237);
 }
 
 .btn-primary:hover {
@@ -99,19 +99,19 @@ body {
 
 .btn-danger {
   background-color: var(--danger-color);
-  color: white;
+  color: rgb(232, 229, 229);
 }
 
 .btn-danger:hover {
-  background-color: #a70016;
+  background-color: #be021b;
 }
 
 .btn-secondary {
-  background-color: #e9ecef;
+  background-color: #dce3eb;
   color: var(--text-color);
 }
 .btn-secondary:hover {
-  background-color: #ced4da;
+  background-color: #d7dee6;
 }
 
 
@@ -119,9 +119,9 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  background-color: #e9ecef;
+  background-color: #d9dee2;
   border-bottom: 1px solid var(--border-color);
-  font-weight: 600;
+  font-weight: 620;
 }
 
 .contact-list-header input[type="checkbox"] {

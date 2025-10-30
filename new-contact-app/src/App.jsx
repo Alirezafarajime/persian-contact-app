@@ -58,13 +58,6 @@ function App() {
     setContactToEdit(null);
   };
 
-  const handleDeleteContact = (id) => {
-    setDeleteAction(() => () => {
-      setContacts(contacts.filter(c => c.id !== id));
-      setIsConfirmModalOpen(false);
-    });
-    setIsConfirmModalOpen(true);
-  };
 
   const handleBulkDelete = () => {
     if (selectedIds.length === 0) return;
@@ -80,22 +73,23 @@ function App() {
     <div className="app-container">
       <Header />
       
-      <div className="top-bar">
-        <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-        <button onClick={handleAddContactClick} className="btn btn-primary">
-          افزودن مخاطب
-        </button>
-        {selectedIds.length > 0 && (
-          <button onClick={handleBulkDelete} className="btn btn-danger">
-            حذف ({selectedIds.length}) مورد
-          </button>
-        )}
-      </div>
+<div className="top-bar">
+  <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+  {selectedIds.length > 0 ? (
+    <button onClick={handleBulkDelete} className="btn btn-danger">
+      حذف ({selectedIds.length}) مورد
+    </button>
+  ) : (
+    <button onClick={handleAddContactClick} className="btn btn-primary">
+      افزودن مخاطب
+    </button>
+  )}
+
+</div>
 
       <ContactList
         contacts={filteredContacts}
         onEdit={handleEditContact}
-        onDelete={handleDeleteContact}
         selectedIds={selectedIds}
         setSelectedIds={setSelectedIds}
       />

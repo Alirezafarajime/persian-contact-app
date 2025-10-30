@@ -3,7 +3,6 @@ import ContactItem from './ContactItem.jsx';
 const ContactList = ({
   contacts,
   onEdit,
-  onDelete,
   selectedIds,
   setSelectedIds,
 }) => {
@@ -45,7 +44,7 @@ const ContactList = ({
           key={contact.id}
           contact={contact}
           onEdit={onEdit}
-          onDelete={onDelete}
+         
           isSelected={selectedIds.includes(contact.id)}
           onSelect={handleSelect}
         />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactItem = ({ contact, onEdit, onDelete, isSelected, onSelect }) => {
+const ContactItem = ({ contact, onEdit, isSelected, onSelect }) => {
   return (
     <div className="contact-item">
       <input
@@ -16,9 +16,7 @@ const ContactItem = ({ contact, onEdit, onDelete, isSelected, onSelect }) => {
         <button className="edit-btn" onClick={() => onEdit(contact)} title="ویرایش">
           ✏️
         </button>
-        <button className="delete-btn" onClick={() => onDelete(contact.id)} title="حذف">
-          🗑️
-        </button>
+       
       </div>
     </div>
   );
