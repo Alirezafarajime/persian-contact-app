@@ -117,9 +117,12 @@ body {
 .btn-secondary {
   background-color: #dce3eb;
   color: var(--text-color);
+  transition: background-color 0.8s ease, transform 0.6s ease,box-shadow 0.4s ease;
 }
 .btn-secondary:hover {
-  background-color: #d7dee6;
+  background-color: #8491a5;
+    transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(104, 92, 92, 0.4);
 }
 
 
