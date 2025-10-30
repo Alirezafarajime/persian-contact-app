@@ -44,7 +44,7 @@ const AddEditContactModal = ({ isOpen, onClose, onSave, contactToEdit }) => {
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}noValidate>
           <div className="modal-header">
             <h2>{contactToEdit ? 'ویرایش مخاطب' : 'افزودن مخاطب جدید'}</h2>
             <button type="button" onClick={onClose} className="close-btn">&times;</button>
