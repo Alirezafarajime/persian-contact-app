@@ -300,6 +300,15 @@ transform: translateY(-2px);
   margin-top: 5px;
 }
 
+.loading-message, .error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;}
+.error-message {
+  color: var(--danger-color);}
+
 @keyframes rotate-gradient {
   0% { --gradient-angle: 0deg;}
   100% {--gradient-angle: 360deg;}

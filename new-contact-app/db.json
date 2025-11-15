@@ -1,0 +1,11 @@
+{
+  "contacts": [
+    { "id": 1, "name": "سینا", "email": "sina.gh@gmail.com" },
+    { "id": 2, "name": "محمد", "email": "mohammad.1388@gmail.com" },
+    { "id": 3, "name": "سهراب", "email": "sohrab.rezakhsh@gmail.com" },
+    { "id": 4, "name": "پژمان جمشیدی", "email": "alcatrazd@gmail.com" },
+    { "id": 5, "name": "صادق", "email": "truth.sadegh@gmail.com" },
+    { "id": 6, "name": "کیوان مرادی", "email": "keivan.moradi@gmail.com" },
+    { "id": 7, "name": "پور مخبر", "email": "json.server@gmail.com" }
+  ]
+}
