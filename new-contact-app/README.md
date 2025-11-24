@@ -1,16 +1,43 @@
-# React + Vite
+# دفترچه تلفن من (My Contact App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+این یک اپلیکیشن وب برای مدیریت لیست مخاطبین است که با استفاده از React ساخته شده است. کاربران می‌توانند مخاطبین خود را اضافه، ویرایش، حذف و جستجو کنند.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 ویژگی‌ها (Features)
 
-## React Compiler
+-   افزودن، ویرایش و حذف مخاطبین
+-   حذف گروهی مخاطبین انتخاب شده
+-   جستجوی زنده بر اساس نام و ایمیل
+-   اعتبارسنجی فرم‌ها برای ورود داده‌های صحیح
+-   اتصال به یک API ساختگی با `json-server` برای ماندگاری داده‌ها
+-   طراحی مدرن و واکنش‌گرا (Responsive)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ تکنولوژی‌های استفاده شده (Tech Stack)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **React.js**: برای ساخت رابط کاربری
+-   **React Hooks**: استفاده از `useState`, `useEffect`, `useContext`, `useReducer`
+-   **Context API + useReducer**: برای مدیریت وضعیت کلی برنامه (State Management)
+-   **React Hook Form**: برای مدیریت پیشرفته فرم‌ها
+-   **Yup**: برای اعتبارسنجی فرم‌ها (Schema Validation)
+-   **JSON Server**: برای ساخت یک API ساختگی (Fake REST API)
+-   **CSS خالص**: برای استایل‌دهی بدون استفاده از کتابخانه‌های خارجی
+
+---
+
+## 🚀 راه‌اندازی و اجرا (Setup and Run)
+
+برای اجرای این پروژه به صورت محلی، مراحل زیر را دنبال کنید:
+
+### پیش‌نیازها
+
+-   [Node.js](https://nodejs.org/) (نسخه ۱۶ یا بالاتر)
+-   [npm](https://www.npmjs.com/)
+
+### نصب
+
+۱. این ریپازیتوری را کلون کنید:
+   ```bash
+   git clone [https://github.com/Alirezafarajime/persian-contact-app]
